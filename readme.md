@@ -6,6 +6,6 @@
 - Posledni projekt [prvniweb](./Prvni_web) je muj prvni test delani webove stranky
 
 ## Domaci ukoly
-  
-- Vylepsit stranku prvniweb(z <https://getbootstrap.com/docs/5.0/components/>)
-- Napsat do README informace o grafika, hvezdicky a [prvniweb](./Prvni_web)
+
+- Dat do kodu misto cisel ctverecky
+- Prinest si obrazky
