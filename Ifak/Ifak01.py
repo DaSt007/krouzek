@@ -1,5 +1,6 @@
 from pydoc import describe
 from time import sleep
+from random import randint
 
 
 
@@ -111,7 +112,7 @@ states = {
             },
         }
     },
-    "": {
+    "8": {
         "name": "",
         "description": "",
         "options": {
@@ -125,7 +126,7 @@ states = {
             },
         }
     },
-    "": {
+    "9": {
         "name": "",
         "description": "",
         "options": {
@@ -139,7 +140,7 @@ states = {
             },
         }
     },
-    "": {
+    "10": {
         "name": "",
         "description": "",
         "options": {
@@ -164,10 +165,6 @@ state = "1"
 
 while True:
 
-    if state == "8":
-        break
-       
-
     i = input
 
     if i == "x":
@@ -185,10 +182,6 @@ while True:
     print(states[state]["options"][i]["description"])
     state = states[state]["options"][i]["target"]
    
-  
-    
-
-    
-
-
-
+    if state == "8":
+        # Tady bude kombat
+        pass
