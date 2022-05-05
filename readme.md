@@ -9,3 +9,4 @@
 
 - Dat do kodu misto cisel ctverecky
 - Prinest si obrazky
+- Najit si info o serveru
