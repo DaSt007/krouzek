@@ -1,8 +1,5 @@
-from pydoc import describe
 from time import sleep
 from random import randint
-
-
 
 
 states = {
@@ -108,27 +105,29 @@ states = {
             },
             "1": {
                 "target": "8",
-                "description": "Chvili prozkoumavas toto podivuhodne misto, kdyz najednou te spatri skret. Ze zeme rychle zvednes kovovou tyc. Chces skreta prastit po hlave tyci <0>, nebo ho zkusit probodnout <1>"
+                "description": "Chvili prozkoumavas toto podivuhodne misto, kdyz najednou te spatri skret. Ze zeme rychle zvednes kovovou tyc. Chces se skretem zacit boj <b>, nebo zkusit utect <u>"
             },
         }
     },
     "8": {
-        "name": "",
+        "name": "boj se skretem",
         "description": "",
+        "fight": {
+            "passed": False,
+            "intro": "Hnusny skret te chce bacit",
+            "outtro": "Mrvola skreta",
+            "death": "Rozmlatil te",
+                    },
         "options": {
-            "": {
-                "target": "",
-                "description": ""
-            },
-            "": {
-                "target": "",
+            "z": {
+                "target": "7",
                 "description": ""
             },
         }
     },
     "9": {
         "name": "",
-        "description": "",
+        "description": "nice",
         "options": {
             "": {
                 "target": "",
@@ -159,17 +158,22 @@ states = {
 
 
 print("Vitej dobrodruhu")
-sleep(1)
 
-state = "1"
+state = "7"
 
-while True:
+while True :
 
-    i = input
+    if not states[state].get("fight", {}).get("passed", True):
+        print(states[state]["fight"]["intro"])
+        sleep(1)
+        if 50 > randint(0,100):
+            print(states[state]["fight"]["death"])
+            state = "3"
+            continue
 
-    if i == "x":
-        exit()
-    
+        states[state]["fight"]["passed"] = True
+        print(states[state]["fight"]["outtro"])
+
     print(states[state]["description"])
     i = input(": ")
     
@@ -178,10 +182,10 @@ while True:
         print("Napsal jsi neco jineho, zkus to znovu")
         i = input(": ")
 
+    if i == "x":
+        exit()
+    
 
     print(states[state]["options"][i]["description"])
     state = states[state]["options"][i]["target"]
    
-    if state == "8":
-        # Tady bude kombat
-        pass
