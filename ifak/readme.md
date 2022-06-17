@@ -1,1 +1,1 @@
-priklad states bez boje:![click](inst.png)
+priklad states bez boje: ![click](inst.png)
