@@ -3,7 +3,7 @@ from random import randint
 from time import sleep
 from turtle import width
 import pyglet
-from data.data2 import states
+from data2 import states
 from pyglet import image
 from pprint import pprint
 
@@ -21,8 +21,8 @@ image1 = pyglet.resource.image('background.jpg')
 image2 = pyglet.resource.image('cave.png')
 image3 = pyglet.resource.image('death.jpg')
 
-icon1 = pyglet.image.load('16_16.png')
-icon2 = pyglet.image.load('32_32_2.jpg')
+icon1 = pyglet.image.load('1616.png')
+icon2 = pyglet.image.load('3232.png')
 window.set_icon(icon1, icon2)
 
 label = pyglet.text.Label('',
