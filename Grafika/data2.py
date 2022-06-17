@@ -3,7 +3,7 @@ states = {
         "name": "Začátek hry",
         "description": "Jestli cheš začít hru, napiš -jo- kdykoli to budeš chtít vzdát, napiš -x-.",
         "options": {
-            "jo": {
+            "j": {
                 "target": "2",
                 "description":
                     "Pak tedy vítej dobrodruhu!\n\n Strašný Gorgoth se dostal do čela barbarů, "
