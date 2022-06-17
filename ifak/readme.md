@@ -1,1 +1,1 @@
-priklad states bez boje:![](/home/dan/Downloads/inst.png)
+priklad states bez boje:![click](inst.png)
