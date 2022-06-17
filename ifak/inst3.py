@@ -1,14 +1,14 @@
-"": {
-    "name": "",
-    "description": "",
-    "options": {
-        "": {
-            "target": "",
-            "description""
-        },
-        "": {
-            "target": "",
-            "description""
-        },
-    }
-},
+    "": {
+        "name": "",
+        "description": "",
+        "options": {
+            "": {
+                "target": "",
+                "description""
+            },
+            "": {
+                "target": "",
+                "description""
+            },
+        }
+    },
