@@ -3,7 +3,7 @@ from random import randint
 from time import sleep
 from turtle import width
 import pyglet
-from data2 import states
+from data.data2 import states
 from pyglet import image
 from pprint import pprint
 
