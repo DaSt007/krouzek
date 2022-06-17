@@ -3,7 +3,7 @@ from random import randint
 from time import sleep
 from turtle import width
 import pyglet
-from data2 import states
+from data.data2 import states
 from pyglet import image
 from pprint import pprint
 
@@ -42,6 +42,9 @@ label2 = pyglet.text.Label(states[state].get('description', ''),
 
 @window.event
 def on_text(text):
+
+    if text == "x":
+        exit()
     
     global states
     global state
