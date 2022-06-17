@@ -14,3 +14,38 @@
        	}
     }, 
 
+
+
+"<!--cislo stavu-->": {
+
+​        	 "name": "<!--tady je pomocne jmeno stavu ktere se nebude zobrazovat-->",
+
+​        	 "fight": {
+
+​            		"passed": False,
+
+​            		 "intro": "<!--co ti to rekne kdyz vejdes do stavu a jeste neni porazeny-->",
+
+​            		 "win": "<!--co ti to rekne kdyz vyhrajes-->",
+
+​            		 "lost": "<!--co ti to rekne kdyz prohrajes-->",
+
+​                   						 },
+
+​        	 "description": "<!--tady jse misto na psani moznosti hrace po vyhrani boje, nebo po vraceni se do uz vybojovane mistnosti-->",
+
+​        	 "options": {
+
+​             		"<!--jaka klavesa se musi zmacknout-->": {
+
+​                	 		"target": "<!--do jakeho stavu se to presune-->",
+
+​                			 "description": "<!--co to napise pri prechazeni do dalsiho stavu-->"
+
+​                     },
+
+​             }
+
+},
+
+
