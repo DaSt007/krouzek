@@ -12,10 +12,10 @@ y = 720
 
 window = pyglet.window.Window(x, y)
 
-window.set_caption("-------------------------------------------------------------------------------------------------------------Ifak-------------------------------------------------------------------------------------------------------------")
+window.set_caption("Ifak")
 
 state = '1'
-final_state = '3'
+final_state = '99'
 
 image1 = pyglet.resource.image('background.jpg')
 image2 = pyglet.resource.image('cave.png')
@@ -43,12 +43,16 @@ label2 = pyglet.text.Label(states[state].get('description', ''),
 @window.event
 def on_text(text):
 
-    if text == "x":
-        exit()
+
     
     global states
     global state
     global final_state
+
+    if text == "x":
+        sleep(2)
+        label.text = "nashledanou"
+        exit()
 
     label.text += text
     
@@ -61,7 +65,7 @@ def on_text(text):
         label2.text = targetstate.get('description', '')
 
 
-        # obsahuje boj
+        
         fight = states[state].get('fight')
         if fight and not fight.get('passed'):
             label.text = fight.get('intro', '')
@@ -87,10 +91,10 @@ def on_text(text):
             else:
                 state = final_state
                 return
-        print(state)
+        
 
         label.text = states[state].get('description', '')
-        # on_draw()
+        
             
 
 
